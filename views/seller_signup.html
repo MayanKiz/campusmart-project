@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seller Signup</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Seller Signup</h1>
+        </div>
+        
+        <div class="card">
+            <form method="POST" action="/seller-signup">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Signup</button>
+            </form>
+            <p>Already seller? <a href="/seller-login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
