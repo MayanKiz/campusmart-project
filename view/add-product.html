@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Add New Product</h1>
+            <a href="/seller-dashboard" class="btn btn-black">Back</a>
+        </div>
+        
+        <div class="card">
+            <form method="POST" action="/add-product" enctype="multipart/form-data">
+                <input type="text" name="item_name" placeholder="Product Name" required>
+                <input type="text" name="category" placeholder="Category" required>
+                <select name="item_condition" required>
+                    <option value="">Condition</option>
+                    <option value="New">New</option>
+                    <option value="Like New">Like New</option>
+                    <option value="Good">Good</option>
+                    <option value="Fair">Fair</option>
+                </select>
+                <input type="number" name="price" placeholder="Price (₹)" required>
+                <textarea name="description" placeholder="Description" rows="4"></textarea>
+                <input type="file" name="product_image" accept="image/*">
+                <button type="submit" class="btn">Add Product</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
