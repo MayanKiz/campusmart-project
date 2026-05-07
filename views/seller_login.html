@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seller Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Seller Login</h1>
+        </div>
+        
+        <div class="card">
+            <form method="POST" action="/seller-login">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>New seller? <a href="/seller-signup">Signup</a></p>
+        </div>
+    </div>
+</body>
+</html>
