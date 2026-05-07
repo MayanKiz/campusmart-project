@@ -1,4 +1,4 @@
-<!-- view_products.php -->
+vbb<!-- view_products.php -->
 
 <?php
 $conn = mysqli_connect("localhost", "root", "", "campusmart_project");
